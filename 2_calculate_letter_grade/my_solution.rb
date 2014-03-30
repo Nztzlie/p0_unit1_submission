@@ -14,7 +14,25 @@
 
 
 # 2. Initial Solution
-
+def get_grade(grades)
+    sum = 0
+    grades.each do |x|
+        sum += x
+    end
+    average = sum / grades.length
+    case 
+    when average >= 90
+        return "A"
+    when average >= 80
+        return "B"
+    when average >= 70
+        return "C"
+    when average >= 60
+        return "D"
+    else 
+        return "F"
+    end
+end
 
 
 
