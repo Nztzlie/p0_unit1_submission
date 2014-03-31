@@ -14,19 +14,29 @@
 
 
 # 2. Initial Solution
-def median(num)
-  order = num.sort
-  	if num.length % 2.0 == 1
-  		num.length/2.0
+def median (array)
+	array.sort!
+	len = array.length
+	if len % 2 == 1
+		array[len/2.0]
 	else
-	  	(num.length.floor + num.length.ceil)/2.0
+		(array[len/2] + array[(len-1)/2])/2.0
+	end
+end
+
+# 3. Refactored Solution
+def median (array)
+	array.sort!
+	len = array.length
+	if len % 2 == 1
+		array[len/2.0]
+	else
+		(array[len/2] + array[(len-1)/2])/2.0
 	end
 end
 
 
-
-# 3. Refactored Solution
-def 
-
-
 # 4. Reflection 
+# I spent far longer than expected on this exercise trying to decide 
+# when to use "2" and when to use "2.0" to get the answer I wanted.
+# Having trouble using this for word strings.
