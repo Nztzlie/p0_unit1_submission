@@ -4,7 +4,7 @@
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.  
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself.
 
 # 1. Pseudocode
 
@@ -14,12 +14,19 @@
 
 
 # 2. Initial Solution
-
+def median(num)
+  order = num.sort
+  	if num.length % 2.0 == 1
+  		num.length/2.0
+	else
+	  	(num.length.floor + num.length.ceil)/2.0
+	end
+end
 
 
 
 # 3. Refactored Solution
-
+def 
 
 
 # 4. Reflection 
