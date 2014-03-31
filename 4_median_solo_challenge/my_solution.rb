@@ -26,15 +26,10 @@ end
 
 # 3. Refactored Solution
 def median (array)
-	array.sort!
-	len = array.length
-	if len % 2 == 1
-		array[len/2.0]
-	else
-		(array[len/2] + array[(len-1)/2])/2.0
-	end
+  array.sort!
+  len = array.length
+  (array[(len-1)/2] + array[len/2])/2.0
 end
-
 
 # 4. Reflection 
 # I spent far longer than expected on this exercise trying to decide 
