@@ -20,15 +20,15 @@ end
 
 # Person 2
 def my_array_modification_method(source, thing_to_modify)
-  # Your code here!
+	source.map{|element| element.is.a?(Integer)? element + thing_to_modify : element}
 end
 
 def my_hash_modification_method(source, thing_to_modify)
-  # Your code here!
+	source.update(source){ |k,v| v + thing_to_modify }
 end
 
 # Identify and describe the ruby method you implemented. 
-# 
+# After trying multiple methods, I found that map and update worked
 #
 #
 
