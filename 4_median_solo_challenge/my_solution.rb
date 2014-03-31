@@ -9,8 +9,16 @@
 # 1. Pseudocode
 
 # What is the input?
+
 # What is the output? (i.e. What should the code return?)
+# return the median of the array, which means that if the number of 
+# elements is odd, it returns the middle option and if the number
+# of elements in the array are even it returns the average of the
+# middle two elements
+
 # What are the steps needed to solve the problem?
+# Need to sort the elements in the array, then find the middle item
+# in the array, regardless of array length.
 
 
 # 2. Initial Solution
